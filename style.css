@@ -193,9 +193,10 @@ section .title::after{
 }
 .about .about-content .left img{
     height: 400px;
-    width: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 10px;
+    border: 2px solid crimson;
 }
 .about .about-content .right{
     width: 55%;
@@ -587,7 +588,7 @@ footer span a:hover{
         padding: 10px 30px;
     }
     .about .about-content .column{
-        width: 50%;
+        width: 40%;
     }
     .max-width{
         max-width: 800px;
@@ -636,11 +637,34 @@ footer span a:hover{
 
 @media (max-width: 500px){
     .text-2 {
-        font-size: 37px;
+        font-size: 27px;
+    }
+    .text-1 {
+        font-size: 18px ;
     }
     .text-3 {
         font-size: 18px;
     }
+    .about .title::after{
+        content: "ini tentang sa";
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .services .title::after{
+    background: #111;
+    content: "what i provide";
+    /* margin-bottom: 5px; */
+    font-size: 15px;
+    }
+    .home {
+        display: flex;
+        background: url("image/fotoku44.png") no-repeat center;
+        height: 100vh;
+        /* color: #fff;
+        min-height: 500px;
+        font-family: "Ubuntu",sans-serif; */
+    }
+
 
 }
 
